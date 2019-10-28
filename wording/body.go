@@ -80,7 +80,7 @@ func randInfinitive() (modal, verb string) {
 }
 func randInfinitiveVerb() string {
 	// without "to"
-	return choice("use", "say", "tweet", "post", "type", "write")
+	return choice("use", "say", "post", "type", "write")
 }
 
 func randPastPerfect() (modal, verb string) {
@@ -89,17 +89,17 @@ func randPastPerfect() (modal, verb string) {
 }
 func randPastVerb() string {
 	// (simple [past) perfect]
-	return choice("used", "said", "tweeted", "posted", "typed")
+	return choice("used", "said", "posted", "typed")
 }
 
 // Random nouns
 
 func randTweetNoun(includeArticle bool) string {
 	if includeArticle {
-		return choice("a tweet", "a post", "a status", "a message",
+		return choice("a post", "a status", "a message",
 			"a status update", "an update")
 	}
-	return choice("tweet", "post", "status", "message",
+	return choice("post", "status", "message",
 		"status update", "update")
 }
 
@@ -152,14 +152,14 @@ var msgLoaders = [...]msgLoader{
 			}
 			suffix = fmt.Sprintf("%v %v %v and %v %v",
 				h,
-				choice("written", "made", "created", "tweeted", "posted", "typed"),
+				choice("written", "made", "created", "posted", "typed"),
 				randMistakeNoun(),
 				m,
 				v,
 			)
 		} else {
 			suffix = fmt.Sprintf("%v %v and %v %v",
-				choice("wrote", "made", "created", "tweeted", "posted", "typed"),
+				choice("wrote", "made", "created", "posted", "typed"),
 				randMistakeNoun(),
 				m,
 				v,
