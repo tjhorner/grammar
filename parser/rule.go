@@ -2,7 +2,7 @@
 package parser
 
 import (
-	"victorz.ca/grammar/sequence"
+	"github.com/tjhorner/grammar/sequence"
 )
 
 type checkGroup int

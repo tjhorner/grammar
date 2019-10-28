@@ -1,7 +1,7 @@
 package grammar_test
 
 import (
-	"victorz.ca/grammar"
+	"github.com/tjhorner/grammar"
 
 	"fmt"
 	"io/ioutil"
